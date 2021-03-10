@@ -1,32 +1,10 @@
 
 exports.min = function min (array) {
-    if(array.length > 0)
-    {
-    let min = 0;
-    for(let i=0;i<array.length;i++)
-        {
-            if(array[min]<array[i])
-                min = i;
-            return min;
-        }
-    }
-    else
-        return 0;
+    return Math.min.apply(null, this);
 }
 
 exports.max = function max (array) {
-  if(array.length > 0)
-    {
-    let max = 0;
-    for(let i=0;i<array.length;i++)
-        {
-            if(array[max]>array[i])
-                max = i;
-            return max;
-        }
-    }
-    else
-        return 0;
+  return Math.max.apply(null, this);
 }
 
 exports.avg = function avg (array) {
